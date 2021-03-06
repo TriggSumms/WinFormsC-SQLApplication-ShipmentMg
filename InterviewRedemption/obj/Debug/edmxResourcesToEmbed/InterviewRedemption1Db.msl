@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InterviewRedemptionModelStoreContainer" CdmEntityContainer="InterviewRedemptionEntities1">
+    <EntitySetMapping Name="Containers">
+      <EntityTypeMapping TypeName="InterviewRedemptionModel.Container">
+        <MappingFragment StoreEntitySet="Containers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Propertys">
+      <EntityTypeMapping TypeName="InterviewRedemptionModel.Property">
+        <MappingFragment StoreEntitySet="Propertys">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShipmentId" ColumnName="ShipmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shipments">
+      <EntityTypeMapping TypeName="InterviewRedemptionModel.Shipment">
+        <MappingFragment StoreEntitySet="Shipments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ContainerId" ColumnName="ContainerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TicketRecords">
+      <EntityTypeMapping TypeName="InterviewRedemptionModel.TicketRecord">
+        <MappingFragment StoreEntitySet="TicketRecords">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="PropertyId" ColumnName="PropertyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
