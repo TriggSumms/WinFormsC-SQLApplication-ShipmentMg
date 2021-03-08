@@ -12,9 +12,13 @@ namespace InterviewRedemption
 {
     public partial class Form2 : Form
     {
+
+        private readonly InterviewRedemptionEntities2 interviewRedemptionEntities2;
+
         public Form2()
         {
             InitializeComponent();
+            interviewRedemptionEntities2 = new InterviewRedemptionEntities2();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -23,6 +27,16 @@ namespace InterviewRedemption
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }

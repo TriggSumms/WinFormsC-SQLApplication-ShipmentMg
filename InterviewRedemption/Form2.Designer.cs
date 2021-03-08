@@ -36,6 +36,7 @@ namespace InterviewRedemption
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +72,7 @@ namespace InterviewRedemption
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(178, 202);
+            this.label4.Location = new System.Drawing.Point(158, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 13);
             this.label4.TabIndex = 8;
@@ -79,7 +80,7 @@ namespace InterviewRedemption
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 218);
+            this.textBox1.Location = new System.Drawing.Point(142, 272);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(126, 20);
             this.textBox1.TabIndex = 7;
@@ -87,7 +88,7 @@ namespace InterviewRedemption
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(489, 202);
+            this.label5.Location = new System.Drawing.Point(469, 256);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 13);
             this.label5.TabIndex = 9;
@@ -96,16 +97,27 @@ namespace InterviewRedemption
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(423, 218);
+            this.listBox1.Location = new System.Drawing.Point(403, 272);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(249, 95);
             this.listBox1.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(362, 171);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "label6";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -115,6 +127,7 @@ namespace InterviewRedemption
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Shipment Manager Console";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,5 +142,6 @@ namespace InterviewRedemption
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label6;
     }
 }
