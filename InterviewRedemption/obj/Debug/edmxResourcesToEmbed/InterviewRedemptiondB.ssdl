@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InterviewRedemptionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'InterviewRedemption.dbo.Container' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Container">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShipmentId" Type="int" />
+  </EntityType>
+  <EntityType Name="Propertys">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'InterviewRedemption.dbo.Shipment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Shipment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="PropertyId" Type="int" />
+  </EntityType>
+  <EntityType Name="TicketRecords">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PropertyId" Type="int" />
+  </EntityType>
+  <EntityContainer Name="InterviewRedemptionModelStoreContainer">
+    <EntitySet Name="Propertys" EntityType="Self.Propertys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TicketRecords" EntityType="Self.TicketRecords" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Container" EntityType="Self.Container" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Container].[Id] AS [Id], 
+    [Container].[Name] AS [Name], 
+    [Container].[ShipmentId] AS [ShipmentId]
+    FROM [dbo].[Container] AS [Container]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Shipment" EntityType="Self.Shipment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Shipment].[Id] AS [Id], 
+    [Shipment].[Name] AS [Name], 
+    [Shipment].[PropertyId] AS [PropertyId]
+    FROM [dbo].[Shipment] AS [Shipment]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

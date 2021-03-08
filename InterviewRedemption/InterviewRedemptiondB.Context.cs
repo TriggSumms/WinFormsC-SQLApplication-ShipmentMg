@@ -13,10 +13,10 @@ namespace InterviewRedemption
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class InterviewRedemptionEntities1 : DbContext
+    public partial class InterviewRedemptionEntities2 : DbContext
     {
-        public InterviewRedemptionEntities1()
-            : base("name=InterviewRedemptionEntities1")
+        public InterviewRedemptionEntities2()
+            : base("name=InterviewRedemptionEntities2")
         {
         }
     
@@ -25,9 +25,9 @@ namespace InterviewRedemption
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Container> Containers { get; set; }
         public virtual DbSet<Property> Propertys { get; set; }
-        public virtual DbSet<Shipment> Shipments { get; set; }
         public virtual DbSet<TicketRecord> TicketRecords { get; set; }
+        public virtual DbSet<Container> Containers { get; set; }
+        public virtual DbSet<Shipment> Shipments { get; set; }
     }
 }

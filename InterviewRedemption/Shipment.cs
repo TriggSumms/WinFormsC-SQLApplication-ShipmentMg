@@ -16,6 +16,6 @@ namespace InterviewRedemption
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> ContainerId { get; set; }
+        public Nullable<int> PropertyId { get; set; }
     }
 }

@@ -14,3 +14,4 @@ C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemp
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\bin\Debug\EntityFramework.xml
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.csproj.CopyComplete
+C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.MainWindow.resources
