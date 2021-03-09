@@ -28,8 +28,7 @@
     
 > ## Concept learned ...
     
-    
-    *Programs learned: Visual Studio IDE and Microsoft SQL Server Express & Management Studio
+ 
     *An older approach to C# using concepts like MDI application, LINQ populating, ADO.NET models, and several structural tricks that were unfamiliar before starting this    project
     *Basic CRUD Achieved, etc
     *Multiple forms created
