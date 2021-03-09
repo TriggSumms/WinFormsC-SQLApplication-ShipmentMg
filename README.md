@@ -12,7 +12,7 @@
 
 
 
-# ... This is a practice application aimed at working with several older technoligies. 
+# ... Practice application aimed at working with dated C# files. 
     *Using C#/.NET &.... WINFORMs to display ....as well as programs (SQL Server Express 2017 / SQL Server Management Studio)
     * Design an application allowing:
     * Our client is looking for a WinForms application that must be written in C#. They are
