@@ -64,7 +64,7 @@ namespace InterviewRedemption
                     MessageBox.Show($"Please Wait while we get ya over to {propertyName}\n\r" + $": Mr./Mrs: {employeeName}");
 
                     //Now lets direct the user to the shipment manager
-                   var Form2 = new Form2();
+                   var Form2 = new ContainerListings();
                    Form2.Show();
                     
                 }
