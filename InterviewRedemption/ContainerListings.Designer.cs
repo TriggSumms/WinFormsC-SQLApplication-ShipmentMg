@@ -42,25 +42,30 @@ namespace InterviewRedemption
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.containerList = new System.Windows.Forms.DataGridView();
-            this.interviewRedemptionDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shipmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.interviewRedemptionDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.shipmentList = new System.Windows.Forms.DataGridView();
-            this.interviewRedemptionDataSet1 = new InterviewRedemption.InterviewRedemptionDataSet1();
-            this.shipmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.shipmentTableAdapter = new InterviewRedemption.InterviewRedemptionDataSet1TableAdapters.ShipmentTableAdapter();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.propertyIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shipmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.interviewRedemptionDataSet1 = new InterviewRedemption.InterviewRedemptionDataSet1();
+            this.shipmentTableAdapter = new InterviewRedemption.InterviewRedemptionDataSet1TableAdapters.ShipmentTableAdapter();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.addShipmentbutton1 = new System.Windows.Forms.Button();
+            this.selectShipmentbutton2 = new System.Windows.Forms.Button();
+            this.addContainerbutton1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.containerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.interviewRedemptionDataSet)).BeginInit();
             this.fillByToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.containerList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.interviewRedemptionDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shipmentList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.interviewRedemptionDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shipmentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.interviewRedemptionDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +92,7 @@ namespace InterviewRedemption
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 171);
+            this.label3.Location = new System.Drawing.Point(90, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 3;
@@ -96,20 +101,20 @@ namespace InterviewRedemption
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(135, 256);
+            this.label4.Location = new System.Drawing.Point(29, 188);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Insert Shipment #:";
+            this.label4.Text = "Insert Shipment: #";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(520, 256);
+            this.label5.Location = new System.Drawing.Point(407, 188);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 13);
+            this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Container(s) involved:";
+            this.label5.Text = "Container : #";
             // 
             // containerBindingSource
             // 
@@ -124,11 +129,10 @@ namespace InterviewRedemption
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(362, 171);
+            this.label6.Location = new System.Drawing.Point(362, 139);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 11;
-            this.label6.Text = "label6";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // containerTableAdapter
@@ -162,16 +166,11 @@ namespace InterviewRedemption
             this.nameDataGridViewTextBoxColumn,
             this.shipmentIdDataGridViewTextBoxColumn});
             this.containerList.DataSource = this.containerBindingSource;
-            this.containerList.Location = new System.Drawing.Point(410, 293);
+            this.containerList.Location = new System.Drawing.Point(410, 255);
             this.containerList.Name = "containerList";
-            this.containerList.Size = new System.Drawing.Size(343, 123);
+            this.containerList.Size = new System.Drawing.Size(343, 183);
             this.containerList.TabIndex = 13;
             this.containerList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // interviewRedemptionDataSetBindingSource
-            // 
-            this.interviewRedemptionDataSetBindingSource.DataSource = this.interviewRedemptionDataSet;
-            this.interviewRedemptionDataSetBindingSource.Position = 0;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -192,6 +191,11 @@ namespace InterviewRedemption
             this.shipmentIdDataGridViewTextBoxColumn.HeaderText = "ShipmentId";
             this.shipmentIdDataGridViewTextBoxColumn.Name = "shipmentIdDataGridViewTextBoxColumn";
             // 
+            // interviewRedemptionDataSetBindingSource
+            // 
+            this.interviewRedemptionDataSetBindingSource.DataSource = this.interviewRedemptionDataSet;
+            this.interviewRedemptionDataSetBindingSource.Position = 0;
+            // 
             // shipmentList
             // 
             this.shipmentList.AutoGenerateColumns = false;
@@ -201,25 +205,11 @@ namespace InterviewRedemption
             this.nameDataGridViewTextBoxColumn1,
             this.propertyIdDataGridViewTextBoxColumn});
             this.shipmentList.DataSource = this.shipmentBindingSource;
-            this.shipmentList.Location = new System.Drawing.Point(32, 293);
+            this.shipmentList.Location = new System.Drawing.Point(32, 255);
             this.shipmentList.Name = "shipmentList";
-            this.shipmentList.Size = new System.Drawing.Size(343, 123);
+            this.shipmentList.Size = new System.Drawing.Size(343, 183);
             this.shipmentList.TabIndex = 14;
             this.shipmentList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.shipmentList_CellContentClick);
-            // 
-            // interviewRedemptionDataSet1
-            // 
-            this.interviewRedemptionDataSet1.DataSetName = "InterviewRedemptionDataSet1";
-            this.interviewRedemptionDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // shipmentBindingSource
-            // 
-            this.shipmentBindingSource.DataMember = "Shipment";
-            this.shipmentBindingSource.DataSource = this.interviewRedemptionDataSet1;
-            // 
-            // shipmentTableAdapter
-            // 
-            this.shipmentTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn1
             // 
@@ -240,11 +230,72 @@ namespace InterviewRedemption
             this.propertyIdDataGridViewTextBoxColumn.HeaderText = "PropertyId";
             this.propertyIdDataGridViewTextBoxColumn.Name = "propertyIdDataGridViewTextBoxColumn";
             // 
+            // shipmentBindingSource
+            // 
+            this.shipmentBindingSource.DataMember = "Shipment";
+            this.shipmentBindingSource.DataSource = this.interviewRedemptionDataSet1;
+            // 
+            // interviewRedemptionDataSet1
+            // 
+            this.interviewRedemptionDataSet1.DataSetName = "InterviewRedemptionDataSet1";
+            this.interviewRedemptionDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // shipmentTableAdapter
+            // 
+            this.shipmentTableAdapter.ClearBeforeFill = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(128, 185);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(247, 20);
+            this.textBox1.TabIndex = 15;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(481, 185);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(272, 20);
+            this.textBox2.TabIndex = 16;
+            // 
+            // addShipmentbutton1
+            // 
+            this.addShipmentbutton1.Location = new System.Drawing.Point(232, 211);
+            this.addShipmentbutton1.Name = "addShipmentbutton1";
+            this.addShipmentbutton1.Size = new System.Drawing.Size(143, 23);
+            this.addShipmentbutton1.TabIndex = 17;
+            this.addShipmentbutton1.Text = "ADD SHIPMENT";
+            this.addShipmentbutton1.UseVisualStyleBackColor = true;
+            // 
+            // selectShipmentbutton2
+            // 
+            this.selectShipmentbutton2.Location = new System.Drawing.Point(32, 211);
+            this.selectShipmentbutton2.Name = "selectShipmentbutton2";
+            this.selectShipmentbutton2.Size = new System.Drawing.Size(143, 23);
+            this.selectShipmentbutton2.TabIndex = 18;
+            this.selectShipmentbutton2.Text = "SELECT SHIPMENT";
+            this.selectShipmentbutton2.UseVisualStyleBackColor = true;
+            // 
+            // addContainerbutton1
+            // 
+            this.addContainerbutton1.Location = new System.Drawing.Point(623, 211);
+            this.addContainerbutton1.Name = "addContainerbutton1";
+            this.addContainerbutton1.Size = new System.Drawing.Size(130, 23);
+            this.addContainerbutton1.TabIndex = 19;
+            this.addContainerbutton1.Text = "ADD CONTAINER";
+            this.addContainerbutton1.UseVisualStyleBackColor = true;
+            this.addContainerbutton1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ContainerListings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.addContainerbutton1);
+            this.Controls.Add(this.selectShipmentbutton2);
+            this.Controls.Add(this.addShipmentbutton1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.shipmentList);
             this.Controls.Add(this.containerList);
             this.Controls.Add(this.fillByToolStrip);
@@ -264,8 +315,8 @@ namespace InterviewRedemption
             ((System.ComponentModel.ISupportInitialize)(this.containerList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.interviewRedemptionDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shipmentList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.interviewRedemptionDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shipmentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.interviewRedemptionDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,5 +347,10 @@ namespace InterviewRedemption
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn propertyIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button addShipmentbutton1;
+        private System.Windows.Forms.Button selectShipmentbutton2;
+        private System.Windows.Forms.Button addContainerbutton1;
     }
 }
