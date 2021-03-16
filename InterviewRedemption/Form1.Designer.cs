@@ -42,7 +42,7 @@ namespace InterviewRedemption
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Engravers MT", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(193, 94);
+            this.label1.Location = new System.Drawing.Point(144, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 31);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace InterviewRedemption
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Copperplate Gothic Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(306, 58);
+            this.label2.Location = new System.Drawing.Point(263, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(207, 26);
             this.label2.TabIndex = 1;
@@ -61,7 +61,7 @@ namespace InterviewRedemption
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(444, 146);
+            this.label3.Location = new System.Drawing.Point(395, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 2;
@@ -71,14 +71,14 @@ namespace InterviewRedemption
             // 
             this.cbPropertySelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPropertySelection.FormattingEnabled = true;
-            this.cbPropertySelection.Location = new System.Drawing.Point(418, 162);
+            this.cbPropertySelection.Location = new System.Drawing.Point(431, 162);
             this.cbPropertySelection.Name = "cbPropertySelection";
-            this.cbPropertySelection.Size = new System.Drawing.Size(138, 21);
+            this.cbPropertySelection.Size = new System.Drawing.Size(188, 21);
             this.cbPropertySelection.TabIndex = 4;
             // 
             // tbEmployeeName
             // 
-            this.tbEmployeeName.Location = new System.Drawing.Point(235, 163);
+            this.tbEmployeeName.Location = new System.Drawing.Point(158, 163);
             this.tbEmployeeName.Name = "tbEmployeeName";
             this.tbEmployeeName.Size = new System.Drawing.Size(126, 20);
             this.tbEmployeeName.TabIndex = 5;
@@ -86,7 +86,7 @@ namespace InterviewRedemption
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 144);
+            this.label4.Location = new System.Drawing.Point(140, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 6;
@@ -94,11 +94,11 @@ namespace InterviewRedemption
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(235, 343);
+            this.button1.Location = new System.Drawing.Point(295, 320);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(321, 50);
+            this.button1.Size = new System.Drawing.Size(120, 46);
             this.button1.TabIndex = 8;
-            this.button1.Text = "GO TO PROPERTY";
+            this.button1.Text = "GO to Property";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -106,7 +106,7 @@ namespace InterviewRedemption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(718, 455);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbEmployeeName);

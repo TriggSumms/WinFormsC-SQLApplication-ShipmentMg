@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace InterviewRedemption
 {
-    public partial class Form2 : Form
+    public partial class MainWindow : Form
     {
-        public Form2()
+        public MainWindow()
         {
             InitializeComponent();
         }
@@ -22,9 +22,15 @@ namespace InterviewRedemption
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var Form1 = new Form1();
+            Form1.Show();
         }
     }
 }

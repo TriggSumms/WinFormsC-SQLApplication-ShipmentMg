@@ -8,9 +8,10 @@ C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemp
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.csproj.CoreCompileInputs.cache
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.exe
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.pdb
-C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.Form2.resources
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\bin\Debug\EntityFramework.dll
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\bin\Debug\EntityFramework.xml
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.csproj.CopyComplete
+C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.MainWindow.resources
+C:\Users\stsum\workspace\IntervieWrEdemption\InterviewRedemption\InterviewRedemption\obj\Debug\InterviewRedemption.ContainerListings.resources
