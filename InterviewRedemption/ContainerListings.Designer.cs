@@ -250,6 +250,7 @@ namespace InterviewRedemption
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 20);
             this.textBox1.TabIndex = 15;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -257,6 +258,7 @@ namespace InterviewRedemption
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 20);
             this.textBox2.TabIndex = 16;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // addShipmentbutton1
             // 
@@ -266,6 +268,7 @@ namespace InterviewRedemption
             this.addShipmentbutton1.TabIndex = 17;
             this.addShipmentbutton1.Text = "ADD SHIPMENT";
             this.addShipmentbutton1.UseVisualStyleBackColor = true;
+            this.addShipmentbutton1.Click += new System.EventHandler(this.addShipmentbutton1_Click);
             // 
             // selectShipmentbutton2
             // 
@@ -275,6 +278,7 @@ namespace InterviewRedemption
             this.selectShipmentbutton2.TabIndex = 18;
             this.selectShipmentbutton2.Text = "SELECT SHIPMENT";
             this.selectShipmentbutton2.UseVisualStyleBackColor = true;
+            this.selectShipmentbutton2.Click += new System.EventHandler(this.selectShipmentbutton2_Click);
             // 
             // addContainerbutton1
             // 
